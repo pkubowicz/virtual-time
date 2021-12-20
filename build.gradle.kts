@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	kotlin("jvm") version "1.6.0"
+	kotlin("jvm") version "1.6.10"
 	id("org.jmailen.kotlinter") version "3.7.0"
 	id("com.github.ben-manes.versions") version "0.39.0"
 }
@@ -14,9 +14,9 @@ repositories {
 }
 
 dependencies {
-	api(platform("io.projectreactor:reactor-bom:2020.0.13"))
+	api(platform("io.projectreactor:reactor-bom:2020.0.14"))
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
-	implementation("org.apache.logging.log4j:log4j-core:2.16.0")
+	implementation("org.apache.logging.log4j:log4j-core:2.17.0")
 
 	testImplementation(platform("org.junit:junit-bom:5.8.2"))
 	testImplementation("org.junit.jupiter:junit-jupiter")
